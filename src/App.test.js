@@ -1,6 +1,7 @@
 import React from 'react'
 import App, { calcularNovoSaldo } from './App'
 import { render, screen } from "@testing-library/react"
+// Revisão
 describe('Componente principal', () => {
   describe('Quando eu abro o app do banco', () => {
     it('o nome é exibido', () => {
@@ -18,7 +19,6 @@ describe('Componente principal', () => {
   })
   describe('Quando eu realizo uma transação', () => {
     it('que é um saque, o valor vai diminuir', () => {
-
       const valores = {
         transacao: 'saque',
         valor: 50
@@ -28,4 +28,5 @@ describe('Componente principal', () => {
     })
   })
 })
+
 
